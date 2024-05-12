@@ -1,0 +1,187 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 88%;
+  background-color: #28304B;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: 240px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* Style the settings icon (Font Awesome used here) */
+.navbar-right a i {
+  cursor: pointer;
+}
+
+/* Adjust the sidebar content styles */
+.content {
+  margin-left: 250px;
+  padding: 40px 20px;
+  transition: margin 0.3s;
+}
+
+/* Sidebar styles */
+
+
+.sidebar {
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #28304B;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px; 
+  /* Other styles for positioning, border, etc. */
+}
+
+.user-name {
+  color: #fff;
+  margin-top: 10px; 
+  /* Other styles for font, etc. */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px 0 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Menu links */
+
+.menu-links {
+  padding: 20px 0;
+}
+
+.menu-links h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.menu-links a {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.menu-links a:hover {
+  color: #7f93d6;
+}
+.dropdown-content a:hover{
+  color: #fff;
+
+}
+/* Content styles */
+.content {
+  margin-left: 250px;
+  padding: 40px 20px;
+  transition: margin 0.3s;
+}
+
+.content h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3b4870;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 35%; /* Shift the dropdown menu to the right */
+}
+
+/* Arrow indicator */
+.menu-links a.dropdown-trigger::after {
+  content: '\25B8'; /* Unicode right-pointing triangle */
+  display: inline-block;
+  margin-left: 5px;
+  transform: rotate(90deg);
+}
+
+.menu-links a.dropdown-trigger:hover::after {
+  content: '\25BE'; /* Unicode down-pointing triangle */
+  transform: rotate(0);
+}
+
+.menu-links {
+  position: relative;
+}
+
+.menu-links a.dropdown-trigger:hover + .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #7f93d6;
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: #cecece;
+}
+h2{
+    color: #384863;
+}
+.card {
+    margin-top: 80px;
+    border: none;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.btn-primary {
+    background-color: #384863;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #07386d;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
