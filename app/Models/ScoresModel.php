@@ -36,9 +36,6 @@ class ScoresModel extends Model
                 }
 
 
-
-               
-
             //search box end
 
             $return = $return->orderBy('users.name', 'desc')

@@ -27,7 +27,7 @@ class LoansController extends Controller
 
 		$user = request()->validate([
 			'employee_id' => 'required',
-			'department_id' => 'required',
+			/* 'department_id' => 'required', */
 			'amount' => 'required',
 			'date_requested' => 'required',
 			'status' => 'required',
@@ -36,7 +36,7 @@ class LoansController extends Controller
 
 		$user                  = new LoansModel;
 		$user->employee_id       = trim($request->employee_id);
-		$user->department_id      = trim($request->department_id);
+	/* 	$user->department_id      = trim($request->department_id); */
 		$user->amount      = trim($request->amount);
 		$user->date_requested      = trim($request->date_requested);
 		$user->status      = trim($request->status);
@@ -55,7 +55,7 @@ class LoansController extends Controller
 	public function edit_update($id, Request $request){
 		$user = LoansModel::find($id);
 		$user->employee_id = trim($request->employee_id);
-		$user->department_id = trim($request->department_id);
+		/* $user->department_id = trim($request->department_id); */
 		$user->amount = trim($request->amount);
 		$user->date_requested = trim($request->date_requested);
 		$user->status = trim($request->status);

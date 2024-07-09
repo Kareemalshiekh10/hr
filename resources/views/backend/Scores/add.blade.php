@@ -39,14 +39,14 @@
                     <div class="col-6">
                         <label class="form-label">Work Life Balance</label>
                         <input type="number" value="{{ old('work_life_balance') }}" id="work_life_balance"
-                            name="work_life_balance" class="form-control" placeholder=""
+                            name="work_life_balance" class="form-control" placeholder="Scores for work life balance"
                             aria-label="work_life_balance">
                     </div>
 
                     <div class="col-6">
                         <label class="form-label">skill_development</label>
                         <input type="number" value="{{ old('skill_development') }}" id="skill_development"
-                            name="skill_development" class="form-control" placeholder="" >
+                            name="skill_development" class="form-control" placeholder="Scores for skill development" >
                     </div>
 
 

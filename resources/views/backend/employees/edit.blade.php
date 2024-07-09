@@ -59,13 +59,14 @@
 
                     <div class="col-6">
                         <label class="form-label">Department <span style="color:red;">*</span></label>        
-                        <select class="form-select"  value="{{ $getRecord->Department }}" id="Department" name="Department" aria-label="Department" required>
+                        <select class="form-select" id="Department" name="Department" aria-label="Department" required>
                             <option value="">Select Department Name</option>
                             @foreach($getDepartments as $value_d)
-                             <option {{ ($value_d->id == $getRecord->id) ? 'selected' : '' }} value="{{ $value_d->id }}">{{ $value_d->name }}</option>
+                                <option value="{{ $value_d->id }}" {{ ($value_d->id == $getRecord->Department) ? 'selected' : '' }}>{{ $value_d->name }}</option>
                             @endforeach
                         </select>
                     </div>
+                    
 
                     <div class="col-6">
                         <label class="form-label">Position <span style="color:red;">*</span></label>

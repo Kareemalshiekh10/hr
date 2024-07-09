@@ -39,7 +39,7 @@
                         </select>
                     </div>
 
-                    <div class="col-6">
+                   {{--  <div class="col-6">
                         <label class="form-label">Department head<span style="color:red;">*</span></label>
                         <select class="form-control" name="department_id">
                             <option value="">Select Department Name</option>
@@ -48,7 +48,7 @@
                                     value="{{ $value_department->id }}">{{ $value_department->name }}</option>
                             @endforeach
                         </select>
-                    </div>
+                    </div> --}}
                     <div class="col-6">
                         <label class="form-label">Amount</label>
                         <input type="number" value="{{ $getRecord->amount }}" name="amount" class="form-control" required>

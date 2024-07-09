@@ -92,7 +92,7 @@ public function add(Request $request){
             $filename = $randomStr.'.' .$file->getClientOriginalExtension();
             $file->move('upload/', $filename);
             $user-> profile_image= $filename;
-        }
+        }   
 
         $user->save();
 

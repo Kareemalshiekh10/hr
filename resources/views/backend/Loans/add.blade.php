@@ -35,7 +35,7 @@
                             @endforeach
                        </select>
                     </div>
-
+{{-- 
                     <div class="col-6">
                         <label class="form-label">Department Name <span style="color:red;">*</span></label>
                         <select class="form-control" name= "department_id">
@@ -44,7 +44,7 @@
                             <option value="{{ $value_department->id }}">{{ $value_department->name }}</option>
                             @endforeach
                        </select>
-                    </div>
+                    </div> --}}
 
 
                     <div class="col-6">

@@ -68,7 +68,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Employee name</th>
-                            <th>Department name</th>
+                       {{--      <th>Department name</th> --}}
                             <th>Amount</th>
                             <th>Date Requested</th>
                             <th>Status</th>
@@ -82,7 +82,7 @@
                             <tr>
                                 <td>{{ $value->id }}</td>
                                 <td>{{ !empty($value->get_user_name_single->name)? $value->get_user_name_single->name:''}}</td>
-                                <td>{{ !empty($value->get_department_name_single->name)? $value->get_department_name_single ->name:''}}</td>
+                               {{--  <td>{{ !empty($value->get_department_name_single->name)? $value->get_department_name_single ->name:''}}</td> --}}
                                 <td>{{ $value->amount }}</td>
                                 <td>{{ $value->date_requested }}</td>
                                 <td>{{ $value->status }}</td>
